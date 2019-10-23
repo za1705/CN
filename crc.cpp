@@ -78,7 +78,7 @@ int main()
 		cout<<"\nEnter position to introduce error !!! ";
 		cin>>pos;
 
-		dw[pos-1]=dw[pos-1]&0;
+		dw[pos-1]=(dw[pos-1]^1);
 		
 		for(int i=0;i<17;++i)
 			temp[i]=dw[i];
